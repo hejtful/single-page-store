@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a message indicating no products are available if items prop is an empty array 1`] = `
+<div>
+  <div
+    class="showcase"
+  >
+    <div
+      class="emptyWrapper"
+    >
+      No products are currently available.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders a message indicating no products are available if items prop is undefined 1`] = `
+<div>
+  <div
+    class="showcase"
+  >
+    <div
+      class="emptyWrapper"
+    >
+      No products are currently available.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders a single product 1`] = `
+<div>
+  <div
+    class="showcase"
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="imageWrapper"
+      >
+        <img
+          alt="Test product title product"
+          class="image"
+          src="https://test.image.jpg"
+        />
+      </div>
+      <div
+        class="infoWrapper"
+      >
+        <div
+          class="titleWrapper"
+        >
+          <h4
+            class="title"
+          >
+            Test product title
+          </h4>
+          <span>
+            0.25
+            $
+          </span>
+        </div>
+        <p
+          class="description"
+        >
+          Test product description quite long
+        </p>
+        <button
+          type="button"
+        >
+          Add to Order
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders multiple products 1`] = `
+<div>
+  <div
+    class="showcase"
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="imageWrapper"
+      >
+        <img
+          alt="Test product title product"
+          class="image"
+          src="https://test.image.jpg"
+        />
+      </div>
+      <div
+        class="infoWrapper"
+      >
+        <div
+          class="titleWrapper"
+        >
+          <h4
+            class="title"
+          >
+            Test product title
+          </h4>
+          <span>
+            0.25
+            $
+          </span>
+        </div>
+        <p
+          class="description"
+        >
+          Test product description quite long
+        </p>
+        <button
+          type="button"
+        >
+          Add to Order
+        </button>
+      </div>
+    </div>
+    <div
+      class="wrapper"
+    >
+      <div
+        class="imageWrapper"
+      >
+        <img
+          alt="Additional item title product"
+          class="image"
+          src="https://additional.image.jpg"
+        />
+      </div>
+      <div
+        class="infoWrapper"
+      >
+        <div
+          class="titleWrapper"
+        >
+          <h4
+            class="title"
+          >
+            Additional item title
+          </h4>
+          <span>
+            1000
+            $
+          </span>
+        </div>
+        <p
+          class="description"
+        >
+          Shorter description
+        </p>
+        <button
+          type="button"
+        >
+          Add to Order
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

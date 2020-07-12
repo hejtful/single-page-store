@@ -1,0 +1,34 @@
+.wrapper {
+  border: 1px solid #dbdbdb;
+  display: flex;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.imageWrapper {
+  flex: 0 0 30%;
+  margin-right: 0.5em;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.infoWrapper {
+  flex-grow: 1;
+}
+
+.titleWrapper {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+}
+
+.description {
+  font-size: 0.875em;
+  margin: 0.5em 0;
+}

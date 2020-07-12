@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with props and add button 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="imageWrapper"
+    >
+      <img
+        alt="Test title product"
+        class="image"
+        src="http://test.image.com"
+      />
+    </div>
+    <div
+      class="infoWrapper"
+    >
+      <div
+        class="titleWrapper"
+      >
+        <h4
+          class="title"
+        >
+          Test title
+        </h4>
+        <span>
+          1.25
+          $
+        </span>
+      </div>
+      <p
+        class="description"
+      >
+        A bit shorter description
+      </p>
+      <button
+        type="button"
+      >
+        Add to Order
+      </button>
+    </div>
+  </div>
+</div>
+`;
