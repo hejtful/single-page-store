@@ -11,21 +11,9 @@ import { Showcase } from 'components/showcase/Showcase';
 import { Cart } from 'components/cart/Cart';
 import { Inventory } from 'components/inventory/Inventory';
 
-const inventoryInitialState = {
-  '1': {
-    id: '1',
-    title: 'Test product title',
-    price: 0.25,
-    image: 'https://images.dog.ceo/breeds/beagle/n02088364_10362.jpg',
-    description: 'Test product description quite long',
-  },
-};
-
 export const App = () => {
   const { cartState, cartDispatch } = useCartReducer();
-  const { inventoryState, inventoryDispatch } = useInventoryReducer(
-    inventoryInitialState
-  );
+  const { inventoryState, inventoryDispatch } = useInventoryReducer();
 
   function notifyAboutCartItemChange(field, title) {
     toast(`The ${field} of the ${title} item in your cart has changed.`, {
