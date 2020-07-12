@@ -11,7 +11,7 @@ export const Inventory = ({
   onInventoryItemRemove,
   onNewInventoryItemSubmit,
 }) => (
-  <div className={styles.inventory}>
+  <div className={styles.inventory} data-cy="inventory">
     {items?.map((item) => (
       <InventoryItem
         {...item}
