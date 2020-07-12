@@ -3,7 +3,7 @@
 exports[`renders a single product and new product form 1`] = `
 <div>
   <div
-    class="inventory"
+    data-cy="inventory"
   >
     <div
       class="wrapper"
@@ -44,7 +44,7 @@ exports[`renders a single product and new product form 1`] = `
           Test product description quite long
         </textarea>
         <button
-          class="button"
+          class="button danger"
           type="button"
         >
           Remove Product
@@ -103,7 +103,7 @@ exports[`renders a single product and new product form 1`] = `
 exports[`renders multiple products and new product form 1`] = `
 <div>
   <div
-    class="inventory"
+    data-cy="inventory"
   >
     <div
       class="wrapper"
@@ -144,7 +144,7 @@ exports[`renders multiple products and new product form 1`] = `
           Test product description quite long
         </textarea>
         <button
-          class="button"
+          class="button danger"
           type="button"
         >
           Remove Product
@@ -190,7 +190,7 @@ exports[`renders multiple products and new product form 1`] = `
           Shorter description
         </textarea>
         <button
-          class="button"
+          class="button danger"
           type="button"
         >
           Remove Product
@@ -249,7 +249,7 @@ exports[`renders multiple products and new product form 1`] = `
 exports[`renders only a new product form if items prop is an empty array 1`] = `
 <div>
   <div
-    class="inventory"
+    data-cy="inventory"
   >
     <div
       class="wrapper"
@@ -303,7 +303,7 @@ exports[`renders only a new product form if items prop is an empty array 1`] = `
 exports[`renders only a new product form if items prop undefined 1`] = `
 <div>
   <div
-    class="inventory"
+    data-cy="inventory"
   >
     <div
       class="wrapper"

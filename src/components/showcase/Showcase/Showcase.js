@@ -5,7 +5,7 @@ import { ShowcaseItem } from '../ShowcaseItem';
 import styles from './Showcase.module.css';
 
 export const Showcase = ({ items, onAddItemToCart }) => (
-  <div className={styles.showcase} data-cy="showcase">
+  <div data-cy="showcase">
     {items?.length ? (
       items.map((item) => (
         <ShowcaseItem {...item} key={item.id} onAdd={onAddItemToCart} />

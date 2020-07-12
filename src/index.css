@@ -63,6 +63,21 @@ button:hover {
   background-color: #276cda;
 }
 
-button:active {
+button:active,
+button:focus {
   background-color: #2366d1;
+  outline: none;
+}
+
+button.danger {
+  background-color: #f14668;
+}
+
+button.danger:hover {
+  background-color: #f03a5f;
+}
+
+button.danger:active,
+button.danger:focus {
+  background-color: #ef2e55;
 }

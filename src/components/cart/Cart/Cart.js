@@ -7,7 +7,7 @@ import { getTotalAmount } from 'utility/cart/getTotalAmount';
 import styles from './Cart.module.css';
 
 export const Cart = ({ items, onCartItemRemove }) => (
-  <div className={styles.cart} data-cy="cart">
+  <div data-cy="cart">
     {items?.length ? (
       <>
         {items.map((item) => (

@@ -22,7 +22,7 @@ export const CartItem = ({ id, title, price, quantity, onRemove }) => {
       </div>
 
       <div className={styles.removeWrapper}>
-        <button type="button" onClick={handleRemove}>
+        <button type="button" className="danger" onClick={handleRemove}>
           X
         </button>
       </div>

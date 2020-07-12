@@ -41,7 +41,7 @@ exports[`renders with initial values set 1`] = `
         Test product description quite long
       </textarea>
       <button
-        class="button"
+        class="button danger"
         type="button"
       >
         Remove Product

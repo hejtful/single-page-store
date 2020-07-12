@@ -3,7 +3,7 @@
 exports[`renders a message indicating no products are available if items prop is an empty array 1`] = `
 <div>
   <div
-    class="showcase"
+    data-cy="showcase"
   >
     <div
       class="emptyWrapper"
@@ -17,7 +17,7 @@ exports[`renders a message indicating no products are available if items prop is
 exports[`renders a message indicating no products are available if items prop is undefined 1`] = `
 <div>
   <div
-    class="showcase"
+    data-cy="showcase"
   >
     <div
       class="emptyWrapper"
@@ -31,7 +31,7 @@ exports[`renders a message indicating no products are available if items prop is
 exports[`renders a single product 1`] = `
 <div>
   <div
-    class="showcase"
+    data-cy="showcase"
   >
     <div
       class="wrapper"
@@ -80,7 +80,7 @@ exports[`renders a single product 1`] = `
 exports[`renders multiple products 1`] = `
 <div>
   <div
-    class="showcase"
+    data-cy="showcase"
   >
     <div
       class="wrapper"

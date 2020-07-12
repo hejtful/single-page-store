@@ -65,7 +65,11 @@ export const InventoryItem = ({
           className={`${styles.formElement} ${styles.textarea}`}
         />
 
-        <button type="button" onClick={handleRemove} className={styles.button}>
+        <button
+          type="button"
+          onClick={handleRemove}
+          className={`${styles.button} danger`}
+        >
           Remove Product
         </button>
       </form>
