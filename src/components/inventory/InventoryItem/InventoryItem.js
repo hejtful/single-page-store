@@ -16,11 +16,11 @@ export const InventoryItem = ({
   }
 
   const handleChange = (field) => (event) => {
-    onChange(id, field, event.target.value);
+    onChange(id, title, field, event.target.value);
   };
 
   function handleRemove() {
-    onRemove(id);
+    onRemove(id, title);
   }
 
   return (

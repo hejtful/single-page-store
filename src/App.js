@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { useCartReducer } from 'hooks/useCartReducer';
 import { useInventoryReducer } from 'hooks/useInventoryReducer';
@@ -25,6 +27,23 @@ export const App = () => {
     inventoryInitialState
   );
 
+  function notifyAboutCartItemChange(field, title) {
+    toast(`The ${field} of the ${title} item in your cart has changed.`, {
+      toastId: 'cartItemChangeNotification',
+      type: 'info',
+    });
+  }
+
+  function notifyAboutCartItemRemoval(title) {
+    toast(
+      `${title} item is no longer available and it has been removed from your cart.`,
+      {
+        toastId: 'cartItemRemovalNotification',
+        type: 'warning',
+      }
+    );
+  }
+
   function handleCartItemAdd(id) {
     cartDispatch({ type: 'add', payload: inventoryState[id] });
   }
@@ -33,18 +52,20 @@ export const App = () => {
     cartDispatch({ type: 'remove', payload: { id } });
   }
 
-  function handleInventoryItemChange(id, field, value) {
+  function handleInventoryItemChange(id, title, field, value) {
     inventoryDispatch({ type: 'change', payload: { id, field, value } });
 
     if (cartState[id]) {
+      notifyAboutCartItemChange(field, title);
       cartDispatch({ type: 'change', payload: { id, field, value } });
     }
   }
 
-  function handleInventoryItemRemove(id) {
+  function handleInventoryItemRemove(id, title) {
     inventoryDispatch({ type: 'remove', payload: { id } });
 
     if (cartState[id]) {
+      notifyAboutCartItemRemoval(title);
       cartDispatch({ type: 'remove', payload: { id } });
     }
   }
@@ -78,6 +99,7 @@ export const App = () => {
           onNewInventoryItemSubmit={handleNewInventoryItemSubmit}
         />
       </Column>
+      <ToastContainer />
     </Wrapper>
   );
 };
