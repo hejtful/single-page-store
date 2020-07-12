@@ -12,7 +12,7 @@ export const CartItem = ({ id, title, price, quantity, onRemove }) => {
       <div className={styles.infoWrapper}>
         <div className={styles.line}>
           <h4 className={styles.title}>{title}</h4>
-          <span>{price}</span>
+          <span>{price}$</span>
         </div>
 
         <div className={styles.line}>
