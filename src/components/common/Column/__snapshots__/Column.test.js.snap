@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders column element and all children 1`] = `
+<div>
+  <section
+    class="column"
+  >
+    <div>
+      Test child 1
+    </div>
+    <div>
+      Test child 2
+    </div>
+  </section>
+</div>
+`;
