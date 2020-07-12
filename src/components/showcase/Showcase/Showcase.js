@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { locals } from 'locals';
 import { ShowcaseItem } from '../ShowcaseItem';
 
 import styles from './Showcase.module.css';
@@ -12,7 +13,7 @@ export const Showcase = ({ items, onAddItemToCart }) => (
       ))
     ) : (
       <div className={styles.emptyWrapper}>
-        No products are currently available.
+        {locals.showcase.empty_showcase}
       </div>
     )}
   </div>

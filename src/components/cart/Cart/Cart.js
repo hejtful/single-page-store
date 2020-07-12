@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { locals } from 'locals';
 import { CartItem } from '../CartItem';
 import { CartTotal } from '../CartTotal';
 import { getTotalAmount } from 'utility/cart/getTotalAmount';
@@ -17,7 +18,7 @@ export const Cart = ({ items, onCartItemRemove }) => (
         <CartTotal amount={getTotalAmount(items)} />
       </>
     ) : (
-      <div className={styles.emptyWrapper}>Your cart is currently empty.</div>
+      <div className={styles.emptyWrapper}>{locals.cart.empty_cart}</div>
     )}
   </div>
 );

@@ -25,7 +25,8 @@ exports[`renders with props and remove button 1`] = `
         class="line"
       >
         <span>
-          Quantity:
+          Quantity
+          :
         </span>
         <span>
           5

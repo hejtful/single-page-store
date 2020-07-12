@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { locals } from 'locals';
 import { serializeFormData } from 'utility/form/serializeFormData.js';
 
 import styles from './InventoryItemNew.module.css';
@@ -21,7 +22,7 @@ export const InventoryItemNew = ({ onSubmit }) => {
             type="text"
             required
             name="title"
-            placeholder="Title"
+            placeholder={locals.inventory.title_placeholder}
             className={styles.formElement}
           />
 
@@ -31,7 +32,7 @@ export const InventoryItemNew = ({ onSubmit }) => {
             min="0.01"
             required
             name="price"
-            placeholder="Price"
+            placeholder={locals.inventory.price_placeholder}
             className={styles.formElement}
           />
         </div>
@@ -40,19 +41,19 @@ export const InventoryItemNew = ({ onSubmit }) => {
           type="url"
           required
           name="image"
-          placeholder="Image URL"
+          placeholder={locals.inventory.image_placeholder}
           className={styles.formElement}
         />
 
         <textarea
           required
           name="description"
-          placeholder="Description"
+          placeholder={locals.inventory.description_placeholder}
           className={`${styles.formElement} ${styles.textarea}`}
         />
 
         <button type="submit" className={styles.button}>
-          Add Product
+          {locals.inventory.add_product}
         </button>
       </form>
     </div>

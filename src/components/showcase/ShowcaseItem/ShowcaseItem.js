@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { locals } from 'locals';
+
 import styles from './ShowcaseItem.module.css';
 
 export const ShowcaseItem = ({
@@ -29,7 +31,7 @@ export const ShowcaseItem = ({
         <p className={styles.description}>{description}</p>
 
         <button type="button" onClick={handleAdd}>
-          Add to Order
+          {locals.showcase.add_to_order}
         </button>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { locals } from 'locals';
 import styles from './CartItem.module.css';
 
 export const CartItem = ({ id, title, price, quantity, onRemove }) => {
@@ -16,7 +17,7 @@ export const CartItem = ({ id, title, price, quantity, onRemove }) => {
         </div>
 
         <div className={styles.line}>
-          <span>Quantity:</span>
+          <span>{locals.cart.quantity}:</span>
           <span>{quantity}</span>
         </div>
       </div>

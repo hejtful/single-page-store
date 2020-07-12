@@ -5,7 +5,8 @@ exports[`renders the total amount and currency sign 1`] = `
   <div
     class="wrapper"
   >
-    Total: 
+    Total
+    : 
     1000
     $
   </div>

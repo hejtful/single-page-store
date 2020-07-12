@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { locals } from 'locals';
+
 import styles from './InventoryItem.module.css';
 
 export const InventoryItem = ({
@@ -31,7 +33,7 @@ export const InventoryItem = ({
             type="text"
             required
             value={title}
-            placeholder="Title"
+            placeholder={locals.inventory.title_placeholder}
             onChange={handleChange('title')}
             className={styles.formElement}
           />
@@ -42,7 +44,7 @@ export const InventoryItem = ({
             min="0.01"
             required
             value={price}
-            placeholder="Price"
+            placeholder={locals.inventory.price_placeholder}
             onChange={handleChange('price')}
             className={styles.formElement}
           />
@@ -52,7 +54,7 @@ export const InventoryItem = ({
           type="url"
           required
           value={image}
-          placeholder="Image URL"
+          placeholder={locals.inventory.image_placeholder}
           onChange={handleChange('image')}
           className={styles.formElement}
         />
@@ -60,7 +62,7 @@ export const InventoryItem = ({
         <textarea
           required
           value={description}
-          placeholder="Description"
+          placeholder={locals.inventory.description_placeholder}
           onChange={handleChange('description')}
           className={`${styles.formElement} ${styles.textarea}`}
         />
@@ -70,7 +72,7 @@ export const InventoryItem = ({
           onClick={handleRemove}
           className={`${styles.button} danger`}
         >
-          Remove Product
+          {locals.inventory.remove_product}
         </button>
       </form>
     </div>
