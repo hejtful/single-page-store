@@ -1,9 +1,21 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
-test('renders learn react link', () => {
+import { App } from './App';
+import { serializeFormData } from 'utility/form/serializeFormData';
+
+jest.mock('utility/form/serializeFormData');
+
+it('renders column titles', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  const showcaseTitle = getByText(/List of Products/i);
+  expect(showcaseTitle).toBeInTheDocument();
+
+  const cartTitle = getByText(/Shopping Cart/i);
+  expect(cartTitle).toBeInTheDocument();
+
+  const inventoryTitle = getByText(/Inventory/i);
+  expect(inventoryTitle).toBeInTheDocument();
 });
