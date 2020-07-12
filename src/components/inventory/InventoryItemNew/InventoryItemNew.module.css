@@ -1,0 +1,18 @@
+.wrapper {
+  border: 1px solid #dbdbdb;
+  margin-top: 1em;
+  padding: 0.5em;
+}
+
+.formGroupInline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formGroupInline .formElement:first-child {
+  margin-right: 0.5em;
+}
+
+.button {
+  width: 100%;
+}

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with initial values set 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <form>
+      <div
+        class="formGroupInline"
+      >
+        <input
+          class="formElement"
+          placeholder="Title"
+          required=""
+          type="text"
+          value="Test product title"
+        />
+        <input
+          class="formElement"
+          min="0.01"
+          placeholder="Price"
+          required=""
+          step="0.01"
+          type="number"
+          value="0.25"
+        />
+      </div>
+      <input
+        class="formElement"
+        placeholder="Image URL"
+        required=""
+        type="url"
+        value="https://test.image.jpg"
+      />
+      <textarea
+        class="formElement textarea"
+        placeholder="Description"
+        required=""
+      >
+        Test product description quite long
+      </textarea>
+      <button
+        class="button"
+        type="button"
+      >
+        Remove Product
+      </button>
+    </form>
+  </div>
+</div>
+`;

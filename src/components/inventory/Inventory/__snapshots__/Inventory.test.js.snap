@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a single product and new product form 1`] = `
+<div>
+  <div
+    class="inventory"
+  >
+    <div
+      class="wrapper"
+    >
+      <form>
+        <div
+          class="formGroupInline"
+        >
+          <input
+            class="formElement"
+            placeholder="Title"
+            required=""
+            type="text"
+            value="Test product title"
+          />
+          <input
+            class="formElement"
+            min="0.01"
+            placeholder="Price"
+            required=""
+            step="0.01"
+            type="number"
+            value="0.25"
+          />
+        </div>
+        <input
+          class="formElement"
+          placeholder="Image URL"
+          required=""
+          type="url"
+          value="https://test.image.jpg"
+        />
+        <textarea
+          class="formElement textarea"
+          placeholder="Description"
+          required=""
+        >
+          Test product description quite long
+        </textarea>
+        <button
+          class="button"
+          type="button"
+        >
+          Remove Product
+        </button>
+      </form>
+    </div>
+    <div
+      class="wrapper"
+    >
+      <form>
+        <div
+          class="formGroupInline"
+        >
+          <input
+            class="formElement"
+            name="title"
+            placeholder="Title"
+            required=""
+            type="text"
+          />
+          <input
+            class="formElement"
+            min="0.01"
+            name="price"
+            placeholder="Price"
+            required=""
+            step="0.01"
+            type="number"
+          />
+        </div>
+        <input
+          class="formElement"
+          name="image"
+          placeholder="Image URL"
+          required=""
+          type="url"
+        />
+        <textarea
+          class="formElement textarea"
+          name="description"
+          placeholder="Description"
+          required=""
+        />
+        <button
+          class="button"
+          type="submit"
+        >
+          Add Product
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders multiple products and new product form 1`] = `
+<div>
+  <div
+    class="inventory"
+  >
+    <div
+      class="wrapper"
+    >
+      <form>
+        <div
+          class="formGroupInline"
+        >
+          <input
+            class="formElement"
+            placeholder="Title"
+            required=""
+            type="text"
+            value="Test product title"
+          />
+          <input
+            class="formElement"
+            min="0.01"
+            placeholder="Price"
+            required=""
+            step="0.01"
+            type="number"
+            value="0.25"
+          />
+        </div>
+        <input
+          class="formElement"
+          placeholder="Image URL"
+          required=""
+          type="url"
+          value="https://test.image.jpg"
+        />
+        <textarea
+          class="formElement textarea"
+          placeholder="Description"
+          required=""
+        >
+          Test product description quite long
+        </textarea>
+        <button
+          class="button"
+          type="button"
+        >
+          Remove Product
+        </button>
+      </form>
+    </div>
+    <div
+      class="wrapper"
+    >
+      <form>
+        <div
+          class="formGroupInline"
+        >
+          <input
+            class="formElement"
+            placeholder="Title"
+            required=""
+            type="text"
+            value="Additional item title"
+          />
+          <input
+            class="formElement"
+            min="0.01"
+            placeholder="Price"
+            required=""
+            step="0.01"
+            type="number"
+            value="1000"
+          />
+        </div>
+        <input
+          class="formElement"
+          placeholder="Image URL"
+          required=""
+          type="url"
+          value="https://additional.image.jpg"
+        />
+        <textarea
+          class="formElement textarea"
+          placeholder="Description"
+          required=""
+        >
+          Shorter description
+        </textarea>
+        <button
+          class="button"
+          type="button"
+        >
+          Remove Product
+        </button>
+      </form>
+    </div>
+    <div
+      class="wrapper"
+    >
+      <form>
+        <div
+          class="formGroupInline"
+        >
+          <input
+            class="formElement"
+            name="title"
+            placeholder="Title"
+            required=""
+            type="text"
+          />
+          <input
+            class="formElement"
+            min="0.01"
+            name="price"
+            placeholder="Price"
+            required=""
+            step="0.01"
+            type="number"
+          />
+        </div>
+        <input
+          class="formElement"
+          name="image"
+          placeholder="Image URL"
+          required=""
+          type="url"
+        />
+        <textarea
+          class="formElement textarea"
+          name="description"
+          placeholder="Description"
+          required=""
+        />
+        <button
+          class="button"
+          type="submit"
+        >
+          Add Product
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders only a new product form if items prop is an empty array 1`] = `
+<div>
+  <div
+    class="inventory"
+  >
+    <div
+      class="wrapper"
+    >
+      <form>
+        <div
+          class="formGroupInline"
+        >
+          <input
+            class="formElement"
+            name="title"
+            placeholder="Title"
+            required=""
+            type="text"
+          />
+          <input
+            class="formElement"
+            min="0.01"
+            name="price"
+            placeholder="Price"
+            required=""
+            step="0.01"
+            type="number"
+          />
+        </div>
+        <input
+          class="formElement"
+          name="image"
+          placeholder="Image URL"
+          required=""
+          type="url"
+        />
+        <textarea
+          class="formElement textarea"
+          name="description"
+          placeholder="Description"
+          required=""
+        />
+        <button
+          class="button"
+          type="submit"
+        >
+          Add Product
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders only a new product form if items prop undefined 1`] = `
+<div>
+  <div
+    class="inventory"
+  >
+    <div
+      class="wrapper"
+    >
+      <form>
+        <div
+          class="formGroupInline"
+        >
+          <input
+            class="formElement"
+            name="title"
+            placeholder="Title"
+            required=""
+            type="text"
+          />
+          <input
+            class="formElement"
+            min="0.01"
+            name="price"
+            placeholder="Price"
+            required=""
+            step="0.01"
+            type="number"
+          />
+        </div>
+        <input
+          class="formElement"
+          name="image"
+          placeholder="Image URL"
+          required=""
+          type="url"
+        />
+        <textarea
+          class="formElement textarea"
+          name="description"
+          placeholder="Description"
+          required=""
+        />
+        <button
+          class="button"
+          type="submit"
+        >
+          Add Product
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

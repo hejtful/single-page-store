@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with empty values 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <form>
+      <div
+        class="formGroupInline"
+      >
+        <input
+          class="formElement"
+          name="title"
+          placeholder="Title"
+          required=""
+          type="text"
+        />
+        <input
+          class="formElement"
+          min="0.01"
+          name="price"
+          placeholder="Price"
+          required=""
+          step="0.01"
+          type="number"
+        />
+      </div>
+      <input
+        class="formElement"
+        name="image"
+        placeholder="Image URL"
+        required=""
+        type="url"
+      />
+      <textarea
+        class="formElement textarea"
+        name="description"
+        placeholder="Description"
+        required=""
+      />
+      <button
+        class="button"
+        type="submit"
+      >
+        Add Product
+      </button>
+    </form>
+  </div>
+</div>
+`;
