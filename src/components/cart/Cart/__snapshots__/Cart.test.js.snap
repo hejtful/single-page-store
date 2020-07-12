@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a message indicating that the cart is empty if items prop is an empty array 1`] = `
+<div>
+  <div
+    class="cart"
+  >
+    <div
+      class="emptyWrapper"
+    >
+      Your cart is currently empty.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders a message indicating that the cart is empty if items prop is undefined 1`] = `
+<div>
+  <div
+    class="cart"
+  >
+    <div
+      class="emptyWrapper"
+    >
+      Your cart is currently empty.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders a single product 1`] = `
+<div>
+  <div
+    class="cart"
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="infoWrapper"
+      >
+        <div
+          class="line"
+        >
+          <h4
+            class="title"
+          >
+            Test product title
+          </h4>
+          <span>
+            0.25
+          </span>
+        </div>
+        <div
+          class="line"
+        >
+          <span>
+            Quantity:
+          </span>
+          <span>
+            1
+          </span>
+        </div>
+      </div>
+      <div
+        class="removeWrapper"
+      >
+        <button
+          type="button"
+        >
+          X
+        </button>
+      </div>
+    </div>
+    <div
+      class="wrapper"
+    >
+      Total: 
+      0.25
+      $
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders multiple products 1`] = `
+<div>
+  <div
+    class="cart"
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="infoWrapper"
+      >
+        <div
+          class="line"
+        >
+          <h4
+            class="title"
+          >
+            Test product title
+          </h4>
+          <span>
+            0.25
+          </span>
+        </div>
+        <div
+          class="line"
+        >
+          <span>
+            Quantity:
+          </span>
+          <span>
+            1
+          </span>
+        </div>
+      </div>
+      <div
+        class="removeWrapper"
+      >
+        <button
+          type="button"
+        >
+          X
+        </button>
+      </div>
+    </div>
+    <div
+      class="wrapper"
+    >
+      <div
+        class="infoWrapper"
+      >
+        <div
+          class="line"
+        >
+          <h4
+            class="title"
+          >
+            Additional item title
+          </h4>
+          <span>
+            1000
+          </span>
+        </div>
+        <div
+          class="line"
+        >
+          <span>
+            Quantity:
+          </span>
+          <span>
+            5
+          </span>
+        </div>
+      </div>
+      <div
+        class="removeWrapper"
+      >
+        <button
+          type="button"
+        >
+          X
+        </button>
+      </div>
+    </div>
+    <div
+      class="wrapper"
+    >
+      Total: 
+      5000.25
+      $
+    </div>
+  </div>
+</div>
+`;

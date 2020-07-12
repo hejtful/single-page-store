@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders with props and remove button 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    <div
+      class="infoWrapper"
+    >
+      <div
+        class="line"
+      >
+        <h4
+          class="title"
+        >
+          Test title
+        </h4>
+        <span>
+          299.99
+        </span>
+      </div>
+      <div
+        class="line"
+      >
+        <span>
+          Quantity:
+        </span>
+        <span>
+          5
+        </span>
+      </div>
+    </div>
+    <div
+      class="removeWrapper"
+    >
+      <button
+        type="button"
+      >
+        X
+      </button>
+    </div>
+  </div>
+</div>
+`;

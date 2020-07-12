@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the total amount and currency sign 1`] = `
+<div>
+  <div
+    class="wrapper"
+  >
+    Total: 
+    1000
+    $
+  </div>
+</div>
+`;
